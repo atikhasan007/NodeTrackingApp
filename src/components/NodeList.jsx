@@ -36,6 +36,15 @@ const submitHandler = (e) =>{
 
 }
 
+
+const removeHandler = (noteId) =>{
+
+    const updateNode = notes.filter((item) => item.id !== noteId)
+    setNotes(updateNode)
+
+}
+
+
   return (
     <div className='App' >
       <form onSubmit={submitHandler}>
@@ -55,7 +64,7 @@ const submitHandler = (e) =>{
                         <span>
                             {note.title}
                             <button>Edit</button>
-                            <button >Delete</button>
+                            <button onClick={()=> removeHandler(note.id)}>Delete</button>
                         </span>
                     </li>
                 </ul>
