@@ -82,23 +82,24 @@ const updateHandler = () => {
 
   return (
     <div className='App' >
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} className='form-d'>
         <input type='text'
         value={noteTitle}
         onChange={changeTitleHandler}
+        className='input-d'
         />
-        <button type='submit'>{editMode===true? "Update Node":"Add Node"}</button>
+        <button  className="form-btn" type='submit'>{editMode===true? "Update Node":"Add Node"}</button>
       </form>
 
-      <div>
+<div className='second-div'>
   <h2>All Notes</h2>
   <ul> 
     {notes.map((note) => (
-      <li key={note.id}> 
-        <span>
-          {note.title}
-          <button onClick={() => editHandler(note)}>Edit</button>
-          <button onClick={() => removeHandler(note.id)}>Delete</button>
+      <li className='list' key={note.id}> 
+        <span className='spant'>
+            {note.title}
+            <div><button className='b2' onClick={() => editHandler(note)}>Edit</button>
+            <button className="b1" onClick={() => removeHandler(note.id)}>Delete</button></div>
         </span>
       </li>
     ))}
@@ -109,4 +110,4 @@ const updateHandler = () => {
   )
 }
 
-export default NodeList
+export default NodeList;

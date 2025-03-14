@@ -1,6 +1,134 @@
 .App{
   text-align:center;
   margin-top:25px;
+   height:100vh;
+   weight:70vw;
+ 
+   background-color:white;
+}
+
+
+
+
+.input-d{
+  background-color:white;
+  padding:10px;
+  border-radius:10px;
+  border-color:black;
+  color:black;
+  font-size:bold;
+  
+
+  
+
+}
+.form-d{
+margin-top:10px;
+}
+
+.form-btn{
+  background-color: gray;
+  padding:10px;
+  border-radius:10px;
+  border-color:black;
+  color:white;
+  font-size:bold;
+  margin-left:50px;
+  border:none;
+  cursor:pointer;
+}
+
+.second-div{
+
+}
+
+.list{
+  list-style:none;
+  margin-bottom:30px;
+  
+}
+.spant{
+  border:1px solid ;
+  padding:4px;
+  display:flex;
+  align-items:left;
+  justify-content:space-between;
+  margin-right:30px;
+  word-wrap:break-word;
+  width:70vw;
+  text-align:left;
+}
+
+.editanddelete{
+  
+}
+
+.b1{
+  padding:7px;
+  margin-left:5px;
+  border:none;
+  border-radius:5px;
+  background-color:red;
+  color:white;
+  margin-left:25px;
+  position:absolute;
+
+}
+
+
+.b2 {
+  padding:7px;
+  border:none;
+  border-radius:5px;
+  background-color:green;
+  color:white;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+
+
+
+/* media Queries for Responsive Design */
+
+
+@media screen and (max-width:600px){
+  .spant{
+    flex-direction:column;
+    width:90vw;
+    align-items:flex-start;
+    word-wrap:break-word;
+  }
+  .spant div{
+    width:100%;
+    margin-top:5px;
+
+  }
+
+  .b1,
+  .b2{
+    font-size:14px;
+    padding:8px, 12px;
+  }
+
+  .b1 {
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .form-d{
+    width:100%;
+    text-align:center;
+  }
+
+  .input-container input {
+    width: 90%;
+
+  }
+  .form-btn{
+    margin-top:4px;
+  }
 }
 
 
